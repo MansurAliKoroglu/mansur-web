@@ -12,6 +12,7 @@
     "@fortawesome/vue-fontawesome": "2.0.0",
     "core-js": "3.6.5",
     "vue": "2.6.11",
+    "vue-fragment": "1.5.1",
     "vue-mq": "1.0.1",
     "vue-router": "3.2.0"
   },
