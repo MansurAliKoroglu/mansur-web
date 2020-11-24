@@ -1,10 +1,10 @@
 <template>
   <header>
     <div class="logo">MA</div>
-    <mq-layout :mq="['xs', 'sm', 'md']">
+    <mq-layout :mq="['xs', 'sm']">
       <mobile-nav />
     </mq-layout>
-    <mq-layout mq="lg+">
+    <mq-layout mq="md+">
       <desktop-nav />
     </mq-layout>
   </header>

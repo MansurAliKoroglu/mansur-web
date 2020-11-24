@@ -15,7 +15,7 @@
         />
       </a>
     </div>
-    <span class="scroll-down-message">{{$mq === 'lg' || $mq === 'xl' ? 'Scroll' : 'Slide'}} down for details about me!</span>
+    <span class="scroll-down-message">{{$mq === 'md' || $mq === 'lg' || $mq === 'xl' ? 'Scroll' : 'Slide'}} down for details about me!</span>
     <div class="scroll-down-animation-area">
       <scroll-down-animation />
     </div>
