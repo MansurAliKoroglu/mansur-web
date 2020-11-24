@@ -27,7 +27,6 @@
   import ScrollDownAnimation from './ScrollDownAnimation';
 
   export default {
-    name: 'Home',
     components: {
       AnimatedTypewriter,
       ScrollDownAnimation
