@@ -1,0 +1,31 @@
+<template>
+  <div class="divider">
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+  export default { };
+</script>
+
+<style scoped>
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid;
+}
+
+.divider::before {
+  margin-right: .25em;
+}
+
+.divider::after {
+  margin-left: .25em;
+}
+</style>
