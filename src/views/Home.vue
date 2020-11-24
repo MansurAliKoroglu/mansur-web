@@ -1,17 +1,21 @@
 <template>
   <div>
     <custom-header />
-    <main></main>
+    <main>
+      <landing-area />
+    </main>
   </div>
 </template>
 
 <script>
   import CustomHeader from '../components/CustomHeader';
+  import LandingArea from '../components/LandingArea';
 
   export default {
     name: 'Home',
     components: {
-      CustomHeader
+      CustomHeader,
+      LandingArea
     }
   };
 </script>
