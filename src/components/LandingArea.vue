@@ -10,7 +10,7 @@
       <a href="https://github.com/MansurAliKoroglu/mansur-web" target="_blank">
         <font-awesome-icon
           :icon="['fab', 'github']"
-          size="2x"
+          :size="$mq === 'xl' ? '3x' : '2x'"
           class="github-icon"
         />
       </a>
@@ -84,5 +84,45 @@
   .scroll-down-animation {
     width: 50%;
     max-width: 250px;
+  }
+
+  @media (min-width: 992px) {
+    .landing-area {
+      position: relative;
+    }
+
+    .animated-typewriter {
+      font-size: 3rem;
+    }
+
+    .welcome-text {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+
+    .open-source-info-area {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      margin: 1rem;
+      font-size: 0.7rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .scroll-down-message {
+      margin-top: 15rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .animated-typewriter {
+      font-size: 4rem;
+    }
+
+    .welcome-text {
+      font-size: 1.2rem;
+    }
   }
 </style>
