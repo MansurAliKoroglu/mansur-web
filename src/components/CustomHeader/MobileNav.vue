@@ -36,7 +36,7 @@
 </script>
 
 <style scoped>
-  @import '../assets/styles/variables.css';
+  @import '../../assets/styles/variables.css';
 
   nav {
     width: 75%;

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import CustomHeader from '../components/CustomHeader';
+  import CustomHeader from '../components/CustomHeader/CustomHeader';
   import LandingArea from '../components/LandingArea';
 
   export default {

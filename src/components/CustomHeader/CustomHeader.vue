@@ -23,7 +23,7 @@
 </script>
 
 <style scoped>
-  @import '../assets/styles/variables.css';
+  @import '../../assets/styles/variables.css';
 
   header {
     width: 100%;
@@ -36,6 +36,7 @@
     color: white;
     padding: 0 1rem;
     box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, .5);
+    z-index: 100;
   }
 
   .logo {
