@@ -32,8 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--header-color);;
-    color: white;
+    background-color: var(--header-color);
     padding: 0 1rem;
     box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, .5);
     z-index: 100;

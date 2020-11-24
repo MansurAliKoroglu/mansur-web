@@ -22,5 +22,6 @@
 
   #app {
     font-family: 'Poppins', sans-serif;
+    color: white;
   }
 </style>

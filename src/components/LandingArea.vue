@@ -39,7 +39,6 @@
 
   .landing-area {
     background-color: var(--header-color);
-    color: white;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
