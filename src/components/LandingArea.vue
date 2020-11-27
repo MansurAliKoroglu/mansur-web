@@ -1,12 +1,16 @@
 <template>
   <section class="landing-area">
-    <AnimatedTypewriter
-      text="Hi, I am Mansur"
-      :cursor-style="{'border-left': '2px solid gray'}"
-    />
-    <h3 class="welcome-text">Welcome to my page</h3>
-    <div class='open-source-info-area'>
-      <span>Hey! This website is an open source VueJS project. Take a look at the code.</span>
+    <div class="welcome-area">
+      <AnimatedTypewriter
+        text="Hi, I am Mansur"
+        :cursor-style="{'border-left': '2px solid gray'}"
+      />
+      <h3 class="welcome-text">Welcome to my page</h3>
+    </div>
+    <div class="open-source-info-area">
+      <span class="open-source-info-message">
+        Hey! This website is an open source VueJS project. Take a look at the code.
+      </span>
       <a href="https://github.com/MansurAliKoroglu/mansur-web" target="_blank">
         <font-awesome-icon
           :icon="['fab', 'github']"
@@ -15,8 +19,10 @@
         />
       </a>
     </div>
-    <span class="scroll-down-message">{{$mq === 'md' || $mq === 'lg' || $mq === 'xl' ? 'Scroll' : 'Slide'}} down for details about me!</span>
     <div class="scroll-down-animation-area">
+      <span class="scroll-down-message">
+        {{$mq === 'md' || $mq === 'lg' || $mq === 'xl' ? 'Scroll' : 'Slide'}} down to learn details about me!
+      </span>
       <scroll-down-animation />
     </div>
   </section>
@@ -38,25 +44,31 @@
   @import '../assets/styles/variables.css';
 
   .landing-area {
+    height: 100vh;
+    padding: 2rem;
+    padding-top: var(--header-height);
     background-color: var(--header-color);
-    padding: 0 1rem;
     display: flex;
     flex-direction: column;
   }
 
   .animated-typewriter {
     font-size: 2rem;
-    margin-top: 3rem;
+  }
+
+  .welcome-area {
+    padding-top: 1.5rem;
   }
 
   .welcome-text {
     margin: 0;
-    margin-left: 0.3rem;
+    margin-left: 0.6rem;
     font-size: 1rem;
     font-weight: normal;
   }
 
   .open-source-info-area {
+    padding-top: var(--header-height);
     margin: 4rem 0;
     font-size: 0.6rem;
     text-align: center;
@@ -65,30 +77,54 @@
     align-items: center;
   }
 
+  .open-source-info-message {
+    max-width: 300px;
+  }
+
   .github-icon {
     margin-top: 0.3rem;
+  }
+
+  .scroll-down-animation-area {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .scroll-down-message {
     text-align: center;
   }
 
-  .scroll-down-animation-area {
-    height: 175px;
-    display: flex;
-    justify-content: center;
-  }
+  @media (min-width: 576px) {
+    .landing-area {
+      position: relative;
+      padding: 0rem;
+      padding-top: var(--header-height);
+    }
 
-  .scroll-down-animation {
-    width: 50%;
-    max-width: 250px;
+    .welcome-area {
+      position: absolute;
+      top: 20%;
+      padding-left: 10%;
+    }
+
+    .open-source-info-area {
+      width: 200px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   @media (min-width: 992px) {
-    .landing-area {
-      position: relative;
-    }
-
     .animated-typewriter {
       font-size: 3rem;
     }
@@ -99,18 +135,8 @@
     }
 
     .open-source-info-area {
-      position: absolute;
-      top: 0;
-      right: 0;
       width: 300px;
-      margin: 1rem;
       font-size: 0.7rem;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .scroll-down-message {
-      margin-top: 15rem;
     }
   }
 

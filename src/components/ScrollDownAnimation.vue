@@ -16,6 +16,9 @@
 <style scoped>
   .scroll-down-animation {
     position: relative;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
   }
 
   .arrow-down-image-first {

@@ -21,9 +21,5 @@
 </script>
 
 <style scoped>
-  @import '../assets/styles/variables.css';
 
-  main {
-    padding-top: var(--header-height);
-  }
 </style>
