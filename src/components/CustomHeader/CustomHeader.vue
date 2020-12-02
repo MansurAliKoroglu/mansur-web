@@ -2,10 +2,14 @@
   <header>
     <div class="logo">MA</div>
     <mq-layout :mq="['xs', 'sm']">
-      <mobile-nav />
+      <mobile-nav
+        :routes="routes"
+      />
     </mq-layout>
     <mq-layout mq="md+">
-      <desktop-nav />
+      <desktop-nav
+        :routes="routes"
+      />
     </mq-layout>
   </header>
 </template>
@@ -18,7 +22,12 @@
     components: {
       MobileNav,
       DesktopNav
-    }
+    },
+    props: {
+      routes: {
+        type: Array
+      }
+    },
   };
 </script>
 

@@ -10,6 +10,11 @@
           <font-awesome-icon :icon="['fas', 'bars']" @click="toggleDrawer" />
         </div>
         <hr />
+        <ul>
+          <li v-for="(route, index) in routes" :key="index">
+            <a :href="route.href">{{route.name}}</a>
+          </li>
+        </ul>
       </nav>
     </transition>
   </fragment>
@@ -21,6 +26,11 @@
   export default {
     components: {
       Fragment
+    },
+    props: {
+      routes: {
+        type: Array
+      }
     },
     data() {
       return {
@@ -60,6 +70,13 @@
 
   nav hr {
     width: 85%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .drawer-toggle-enter-active, .drawer-toggle-leave-active {

@@ -20,6 +20,12 @@
     text-decoration: none;
   }
 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   #app {
     font-family: 'Poppins', sans-serif;
     color: white;
