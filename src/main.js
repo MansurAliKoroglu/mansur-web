@@ -4,6 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import VueMq from 'vue-mq';
+import VueObserveVisibility from 'vue-observe-visibility';
 
 import App from './App.vue';
 import router from './router';
@@ -27,6 +28,7 @@ Vue.use(
     defaultBreakpoint: 'xs'
   }
 );
+Vue.use(VueObserveVisibility);
 
 new Vue({
   router,
