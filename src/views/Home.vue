@@ -12,6 +12,7 @@
       <landing-area />
       <my-skills-section id="my-skills-section" class="section" />
     </main>
+    <CustomFooter />
   </div>
 </template>
 
@@ -19,13 +20,15 @@
   import CustomHeader from '../components/CustomHeader/CustomHeader';
   import LandingArea from '../components/LandingArea';
   import MySkillsSection from '../components/MySkillsSection';
+  import CustomFooter from '../components/CustomFooter';
 
   export default {
     name: 'Home',
     components: {
       CustomHeader,
       LandingArea,
-      MySkillsSection
+      MySkillsSection,
+      CustomFooter
     }
   };
 </script>
