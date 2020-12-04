@@ -1,6 +1,6 @@
 <template>
   <div>
-    <custom-header
+    <CustomHeader
       :routes="[
         {
           name: 'My Skills',
@@ -9,8 +9,8 @@
       ]"
     />
     <main>
-      <landing-area />
-      <my-skills-section id="my-skills-section" class="section" />
+      <LandingArea />
+      <MySkillsSection id="my-skills-section" class="section" />
     </main>
     <CustomFooter />
   </div>

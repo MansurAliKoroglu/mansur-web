@@ -1,16 +1,16 @@
 <template>
   <header>
     <div class="logo">MA</div>
-    <mq-layout :mq="['xs', 'sm']">
-      <mobile-nav
+    <MqLayout :mq="['xs', 'sm']">
+      <MobileNav
         :routes="routes"
       />
-    </mq-layout>
-    <mq-layout mq="md+">
-      <desktop-nav
+    </MqLayout>
+    <MqLayout mq="md+">
+      <DesktopNav
         :routes="routes"
       />
-    </mq-layout>
+    </MqLayout>
   </header>
 </template>
 

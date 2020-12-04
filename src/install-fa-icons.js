@@ -12,4 +12,4 @@ library.add(
   faStackOverflow
 );
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('FontAwesomeIcon', FontAwesomeIcon);

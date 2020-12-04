@@ -1,13 +1,13 @@
 <template>
-  <fragment>
-    <font-awesome-icon
+  <Fragment>
+    <FontAwesomeIcon
       :icon="['fas', 'bars']"
       @click="toggleDrawer"
     />
-    <transition name="drawer-toggle">
+    <Transition name="drawer-toggle">
       <nav v-show="isDrawerOpened">
         <div class="drawer-header">
-          <font-awesome-icon :icon="['fas', 'bars']" @click="toggleDrawer" />
+          <FontAwesomeIcon :icon="['fas', 'bars']" @click="toggleDrawer" />
         </div>
         <hr />
         <ul>
@@ -16,8 +16,8 @@
           </li>
         </ul>
       </nav>
-    </transition>
-  </fragment>
+    </Transition>
+  </Fragment>
 </template>
 
 <script>

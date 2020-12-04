@@ -2,22 +2,22 @@
   <footer>
     <div class="icons">
       <a href="https://github.com/MansurAliKoroglu" target="_blank">
-        <font-awesome-icon
+        <FontAwesomeIcon
           :icon="['fab', 'github']"
         />
       </a>
       <a href="https://stackoverflow.com/users/10530420/mansur" target="_blank">
-        <font-awesome-icon
+        <FontAwesomeIcon
           :icon="['fab', 'stack-overflow']"
         />
       </a>
       <a href="mailto:mansuralikoroglu@gmail.com">
-        <font-awesome-icon
+        <FontAwesomeIcon
           :icon="['fas', 'at']"
         />
       </a>
       <a href="tel:+905059150896">
-        <font-awesome-icon
+        <FontAwesomeIcon
           :icon="['fas', 'phone']"
         />
       </a>

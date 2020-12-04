@@ -12,7 +12,7 @@
         Hey! This website is an open source VueJS project. Take a look at the code.
       </span>
       <a href="https://github.com/MansurAliKoroglu/mansur-web" target="_blank">
-        <font-awesome-icon
+        <FontAwesomeIcon
           :icon="['fab', 'github']"
           :size="$mq === 'xl' ? '3x' : '2x'"
           class="github-icon"
@@ -23,7 +23,7 @@
       <span class="scroll-down-message">
         {{$mq === 'md' || $mq === 'lg' || $mq === 'xl' ? 'Scroll' : 'Slide'}} down to learn details about me!
       </span>
-      <scroll-down-animation />
+      <ScrollDownAnimation />
     </div>
   </section>
 </template>
