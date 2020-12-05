@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+    app:
+        container_name: mansur-web-app
+        build:
+          context: .
+          dockerfile: dockerfiles/Dockerfile.app
+        volumes:
+            - ./:/app
+            - nodemodules:/app/node_modules
+        ports:
+          - 3207:8080
+        tty: true
+    npm:
+        container_name: mansur-web-npm
+        build:
+            context: .
+            dockerfile: dockerfiles/Dockerfile.npm
+        volumes:
+            - ./:/app
+            - nodemodules:/app/node_modules
+        depends_on:
+          - app
+volumes:
+  nodemodules:
