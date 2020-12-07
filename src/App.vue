@@ -30,4 +30,11 @@
     font-family: 'Poppins', sans-serif;
     color: white;
   }
+
+  button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
 </style>
