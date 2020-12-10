@@ -1,14 +1,27 @@
 <template>
+  <Fragment>
+  <CustomHeader />
   <main>
     <span class="error-code">404</span>
     <span class="error-text">Page Not Found</span>
     <button @click="redirectToHomePage">GO TO HOME PAGE</button>
   </main>
+  <CustomFooter />
+  </Fragment>
 </template>
 
 <script>
+  import { Fragment } from 'vue-fragment';
+  import CustomHeader from '../components/CustomHeader/CustomHeader';
+  import CustomFooter from '../components/CustomFooter';
+
   export default {
     name: 'NotFound',
+    components: {
+      Fragment,
+      CustomHeader,
+      CustomFooter
+    },
     methods: {
       redirectToHomePage() {
         this.$router.push('/');
@@ -43,5 +56,12 @@
     color: white;
     padding: 0.5rem;
     font-weight: bold;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 </style>
