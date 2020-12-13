@@ -1,26 +1,26 @@
 <template>
   <div class="animated-typewriter">
-      <div
-        class="text"
-        :style="{
-          transition: `${letterTypingTime}ms`,
-          width: `${width}px`
-        }"
-      >
-        {{ text }}
-      </div>
-      <div
-        class="cursor"
-        :style="{...cursorStyle}"
-      >
-      </div>
-      <div
-        class="temp-text"
-        v-show="tempText"
-        ref="tempText"
-      >
-        {{ tempText }}
-      </div>
+    <div
+      class="text"
+      :style="{
+        transition: `${letterTypingTime}ms`,
+        width: `${width}px`
+      }"
+    >
+      {{ text }}
+    </div>
+    <div
+      class="cursor"
+      :style="{...cursorStyle}"
+    >
+    </div>
+    <div
+      class="temp-text"
+      v-show="tempText"
+      ref="tempText"
+    >
+      {{ tempText }}
+    </div>
   </div>
 </template>
 <script>

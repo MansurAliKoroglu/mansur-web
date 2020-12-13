@@ -1,12 +1,12 @@
 <template>
   <Fragment>
-  <CustomHeader />
-  <main>
-    <span class="error-code">404</span>
-    <span class="error-text">Page Not Found</span>
-    <button @click="redirectToHomePage">GO TO HOME PAGE</button>
-  </main>
-  <CustomFooter />
+    <CustomHeader />
+    <main>
+      <span class="error-code">404</span>
+      <span class="error-text">Page Not Found</span>
+      <button @click="redirectToHomePage">GO TO HOME PAGE</button>
+    </main>
+    <CustomFooter />
   </Fragment>
 </template>
 
