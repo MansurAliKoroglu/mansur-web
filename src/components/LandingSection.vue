@@ -1,5 +1,5 @@
 <template>
-  <section class="landing-area">
+  <section class="landing-section">
     <div class="welcome-area">
       <AnimatedTypewriter
         text="Hi, I am Mansur"
@@ -43,7 +43,7 @@
 <style scoped>
   @import '../assets/styles/variables.css';
 
-  .landing-area {
+  .landing-section {
     height: 100vh;
     padding: 2rem;
     padding-top: var(--header-height);

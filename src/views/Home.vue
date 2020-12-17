@@ -9,7 +9,7 @@
       ]"
     />
     <main>
-      <LandingArea />
+      <LandingSection />
       <MySkillsSection id="my-skills-section" class="section" />
     </main>
     <CustomFooter />
@@ -18,7 +18,7 @@
 
 <script>
   import CustomHeader from '../components/CustomHeader/CustomHeader';
-  import LandingArea from '../components/LandingArea';
+  import LandingSection from '../components/LandingSection';
   import MySkillsSection from '../components/MySkillsSection';
   import CustomFooter from '../components/CustomFooter';
 
@@ -26,7 +26,7 @@
     name: 'Home',
     components: {
       CustomHeader,
-      LandingArea,
+      LandingSection,
       MySkillsSection,
       CustomFooter
     }
