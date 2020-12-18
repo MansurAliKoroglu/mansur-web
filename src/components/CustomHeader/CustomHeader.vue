@@ -27,7 +27,7 @@
       routes: {
         type: Array
       }
-    },
+    }
   };
 </script>
 
