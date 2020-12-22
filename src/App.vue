@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <RouterView />
   </div>
 </template>
@@ -17,6 +17,8 @@
 
   body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
   }
 
   a {
@@ -28,11 +30,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-
-  #app {
-    font-family: 'Poppins', sans-serif;
-    color: white;
   }
 
   button {
