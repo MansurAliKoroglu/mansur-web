@@ -33,6 +33,7 @@
         if (!isVisible) {
           return;
         }
+
         let levelClass;
 
         switch (this.level) {
@@ -114,7 +115,7 @@
   }
 
   .level-two {
-    background-color: orangered;
+    background-color: rgb(255, 100, 0);
   }
 
   .level-three {
