@@ -3,70 +3,22 @@
     <h2>My Skills</h2>
     <div class="skill-displays">
       <div class="skill-display">
-        <SkillChart
-          title="NodeJS - Express"
-          :level="5"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="VueJS"
-          :level="5"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="HTML/CSS/JS"
-          :level="5"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="Python - Django"
-          :level="3"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="ReactJS"
-          :level="3"
-          style="width: 260px;"
-        />
+        <SkillChart title="NodeJS - Express" :level="5" style="width: 260px" />
+        <SkillChart title="VueJS" :level="5" style="width: 260px" />
+        <SkillChart title="HTML/CSS/JS" :level="5" style="width: 260px" />
+        <SkillChart title="Python - Django" :level="3" style="width: 260px" />
+        <SkillChart title="ReactJS" :level="3" style="width: 260px" />
       </div>
       <div class="skill-display">
-        <SkillChart
-          title="Docker"
-          :level="5"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="Git"
-          :level="5"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="Linux"
-          :level="4"
-          style="width: 260px;"
-        />
+        <SkillChart title="Docker" :level="5" style="width: 260px" />
+        <SkillChart title="Git" :level="5" style="width: 260px" />
+        <SkillChart title="Linux" :level="4" style="width: 260px" />
       </div>
       <div class="skill-display">
-        <SkillChart
-          title="SRP/DRY etc."
-          :level="5"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="Clean Code"
-          :level="5"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="Unit Testing"
-          :level="4"
-          style="width: 260px;"
-        />
-        <SkillChart
-          title="e2e Testing"
-          :level="4"
-          style="width: 260px;"
-        />
+        <SkillChart title="SRP/DRY etc." :level="5" style="width: 260px" />
+        <SkillChart title="Clean Code" :level="5" style="width: 260px" />
+        <SkillChart title="Unit Testing" :level="4" style="width: 260px" />
+        <SkillChart title="e2e Testing" :level="4" style="width: 260px" />
       </div>
     </div>
     <!-- TODO: Show more button will be added here for redirecting user to a page to show all the skills -->
